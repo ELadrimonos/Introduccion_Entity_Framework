@@ -119,3 +119,4 @@ C:\Users\julio\RiderProjects\EFGetStarted\obj\Debug\net8.0\refint\EFGetStarted.d
 C:\Users\julio\RiderProjects\EFGetStarted\obj\Debug\net8.0\EFGetStarted.pdb
 C:\Users\julio\RiderProjects\EFGetStarted\obj\Debug\net8.0\EFGetStarted.genruntimeconfig.cache
 C:\Users\julio\RiderProjects\EFGetStarted\obj\Debug\net8.0\ref\EFGetStarted.dll
+C:\Users\julio\RiderProjects\EFGetStarted\obj\Debug\net8.0\EFGetStarted.sourcelink.json

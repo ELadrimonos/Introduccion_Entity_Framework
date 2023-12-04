@@ -93,9 +93,16 @@ do
             int idPersona = int.Parse(Console.ReadLine());
             Console.Write("ID trabajo: ");
             int idTrabajoRelacion = int.Parse(Console.ReadLine());
-
-            baseDatos.Add(new PersonaTrabajo { PersonaId = idPersona, TrabajoId = idTrabajoRelacion });
-            baseDatos.SaveChanges();
+            try
+            {
+                baseDatos.Add(new PersonaTrabajo { PersonaId = idPersona, TrabajoId = idTrabajoRelacion });
+                baseDatos.SaveChanges();
+            }
+            catch (Microsoft.EntityFrameworkCore.DbUpdateException err)
+            {
+                //TODO Hacer distintos casos por tipo de error (Hay dos distintos, no me acuerdo del otro)
+                Console.WriteLine("Una de las claves introducidas no existe.");
+            }
             break;
 
         case 8:
